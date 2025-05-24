@@ -6,6 +6,6 @@ This device consist of seperate outdoor unit and indoor unit.
 
 ### ODU
 
-
+SOC - ODU.png
 
 
