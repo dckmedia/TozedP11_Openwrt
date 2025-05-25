@@ -29,7 +29,7 @@ Identify the UART pin header on the PCB
 Power on the ODU and monitor the boot log. You should see U-Boot or kernel messages if everything is connected properly.
 
 ### Load Openwrt initramfs
-Carefully look at the Uart terminal and stop autoboot by pressing any key.
+Carefully look at the Uart terminal and stop autoboot by pressing any key. 
 
     athrs27_phy_setup ATHR_PHY_CONTROL 0 :1000
     athrs27_phy_setup ATHR_PHY_SPEC_STAUS 0 :10
@@ -42,4 +42,14 @@ Carefully look at the Uart terminal and stop autoboot by pressing any key.
     eth1 up
     eth0, eth1
     Hit any key to stop autoboot:  0
+
+Set tftp server and client IP
+    setenv ipaddr 192.168.8.1          # IP address for the router
+    setenv serverip 192.168.8.100      # IP address of your PC
+Make sure you have tftp server running on your PC
+
+    tftpboot 0x81000000 openwrt-ath79-generic-tozed_p11-initramfs-kernel.bin
+Wait until upload compltes. then enter
+
+    bootm 0x81000000
 
