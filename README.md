@@ -28,7 +28,18 @@ Identify the UART pin header on the PCB
 
 Power on the ODU and monitor the boot log. You should see U-Boot or kernel messages if everything is connected properly.
 
+### Load Openwrt initramfs
+Carefully look at the Uart terminal and stop autoboot by pressing any key.
 
-
-
+    athrs27_phy_setup ATHR_PHY_CONTROL 0 :1000
+    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 0 :10
+    athrs27_phy_setup ATHR_PHY_CONTROL 1 :1000
+    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 1 :10
+    athrs27_phy_setup ATHR_PHY_CONTROL 2 :1000
+    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 2 :10
+    athrs27_phy_setup ATHR_PHY_CONTROL 3 :1000
+    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 3 :10
+    eth1 up
+    eth0, eth1
+    Hit any key to stop autoboot:  0
 
