@@ -5,21 +5,21 @@ Install Openwrt on Tozed P11 ODU
 This device consist of seperate outdoor unit and indoor unit. 
 
 ### ODU UART Access
-#### 1. Open the ODU (Outdoor Unit):
+##### 1. Open the ODU (Outdoor Unit):
 Carefully disassemble the unit to access the main PCB. Take precautions to avoid damaging the casing or components.
 
-#### 2. Locate the UART Header:
+##### 2. Locate the UART Header:
 Identify the UART pin header on the PCB  
 <img src="https://github.com/user-attachments/assets/01a16874-02e7-43a0-b43a-20e76711f15a" alt="ODUuart" width="200"/>
 
-#### 3. Connect a USB-to-TTL Adapter:
+##### 3. Connect a USB-to-TTL Adapter:
 
     TX (adapter) → RX (board)
     RX (adapter) → TX (board)
     GND → GND
     Leave VCC disconnected unless needed (most times not required).
 
-#### 4. Use a Serial Terminal:
+##### 4. Use a Serial Terminal:
 
     Open software like PuTTY, screen, minicom, or Tera Term.
     Set baud rate to 115200
@@ -29,27 +29,34 @@ Identify the UART pin header on the PCB
 Power on the ODU and monitor the boot log. You should see U-Boot or kernel messages if everything is connected properly.
 
 ### Load Openwrt initramfs
-Carefully look at the Uart terminal and stop autoboot by pressing any key. 
+#### UART Boot Instructions for Tozed P11
+##### 1. Access the UART Terminal
+Connect to the device via UART (115200 baud rate). You’ll see boot logs similar to:
 
     athrs27_phy_setup ATHR_PHY_CONTROL 0 :1000
     athrs27_phy_setup ATHR_PHY_SPEC_STAUS 0 :10
-    athrs27_phy_setup ATHR_PHY_CONTROL 1 :1000
-    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 1 :10
-    athrs27_phy_setup ATHR_PHY_CONTROL 2 :1000
-    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 2 :10
-    athrs27_phy_setup ATHR_PHY_CONTROL 3 :1000
-    athrs27_phy_setup ATHR_PHY_SPEC_STAUS 3 :10
+    ...
     eth1 up
     eth0, eth1
     Hit any key to stop autoboot:  0
 
-Set tftp server and client IP
-    setenv ipaddr 192.168.8.1          # IP address for the router
-    setenv serverip 192.168.8.100      # IP address of your PC
-Make sure you have tftp server running on your PC
+##### 2. Interrupt the Boot Process
+When you see Hit any key to stop autoboot, press any key quickly to access the U-Boot prompt.
 
+##### 3. Configure TFTP Boot Parameters
+Set the device (router) and TFTP server (your PC) IP addresses:
+
+    setenv ipaddr 192.168.8.1         # IP address of the router
+    setenv serverip 192.168.8.100     # IP address of your PC (running TFTP server)
+
+Make sure your PC is running a TFTP server and the openwrt-ath79-generic-tozed_p11-initramfs-kernel.bin file is placed in the TFTP root directory.
+
+##### 4. Load OpenWrt via TFTP
     tftpboot 0x81000000 openwrt-ath79-generic-tozed_p11-initramfs-kernel.bin
-Wait until upload compltes. then enter
+Wait for the transfer to complete.
+
+##### 5. Boot OpenWrt in RAM
 
     bootm 0x81000000
 
+The device will now boot into the OpenWrt initramfs image from RAM.
