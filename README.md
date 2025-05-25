@@ -6,5 +6,6 @@ This device consist of seperate outdoor unit and indoor unit.
 
 ### ODU UART Access
 
-![Uploading ODUuart.PNG…]()
+![ODUuart](https://github.com/user-attachments/assets/01a16874-02e7-43a0-b43a-20e76711f15a)
+
 
