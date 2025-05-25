@@ -6,8 +6,4 @@ This device consist of seperate outdoor unit and indoor unit.
 
 ### ODU
 
-SOC - ODU.png
-
-https://github.com/dckmedia/TozedP11_Openwrt/blob/20e746228438fb610e93cfbe831f3cc6f698a4ac/SOC%20-%20ODU.png
-
-
+![odu uart](https://github.com/user-attachments/assets/3f8db7ca-c1d1-47d1-b933-2c7b0b085902)
