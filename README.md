@@ -7,6 +7,8 @@ Install Openwrt on Tozed P11 ODU
 
 <img src="https://github.com/user-attachments/assets/13a94e63-55cf-4d45-96f9-1d3ed5609395" alt="IDU" width="300"/>
 
+## Why Openwrt ?
+The ODU can be used as the seperate device with POE adapter and can be connected to any indoor router you have with a WAN port
 
 ### ODU UART Access
 ##### 1. Open the ODU (Outdoor Unit):
