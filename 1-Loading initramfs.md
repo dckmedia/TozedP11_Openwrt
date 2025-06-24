@@ -24,6 +24,7 @@ Make sure your PC is running a TFTP server and the openwrt-ath79-generic-tozed_p
 
 ##### 4. Load OpenWrt via TFTP
     tftpboot 0x81000000 openwrt-ath79-generic-tozed_p11-initramfs-kernel.bin
+    
 Wait for the transfer to complete.
 
 ##### 5. Boot OpenWrt in RAM
