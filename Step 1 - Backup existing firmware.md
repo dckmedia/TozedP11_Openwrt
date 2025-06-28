@@ -14,7 +14,7 @@ Install the correct drivers for your CHA341A. Turn the ODU powe off and unplug t
 
 <img src="https://res.cloudinary.com/dckmedia/image/upload/v1751113196/Tozed_P11/pin_configuration.jpg" alt="cha341a" width="600"/>
 
-Use [flashrom](https://github.com/flashrom/flashrom) if you are using Linux or use [AsProgrammer dregmod](https://github.com/therealdreg/asprogrammer-dregmod)r for windows to backup the existing full flash of your device.
+Use [flashrom](https://github.com/flashrom/flashrom) if you are using Linux or use [AsProgrammer dregmod](https://github.com/therealdreg/asprogrammer-dregmod)r for windows to backup the existing full flash of your device.[Install flashrom on Ubuntu](https://installati.one/install-flashrom-ubuntu-22-04)
 
 Keep the spi backup in secure location so you can write it back using the CHA341a Programmer if needed.
 
