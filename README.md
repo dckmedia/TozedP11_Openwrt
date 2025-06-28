@@ -16,7 +16,7 @@ Carefully disassemble the unit to access the main PCB. Take precautions to avoid
 
 ##### 2. Locate the UART Header:
 Identify the UART pin header on the PCB  
-<img src="https://github.com/user-attachments/assets/01a16874-02e7-43a0-b43a-20e76711f15a" alt="ODUuart" width="200"/>
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1751113055/Tozed_P11/uart.jpg" alt="uart" width="200"/>
 
 ##### 3. Connect a USB-to-TTL Adapter:
 
