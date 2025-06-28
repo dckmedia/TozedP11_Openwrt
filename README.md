@@ -3,9 +3,7 @@ Install Openwrt on Tozed P11 ODU
 
 ## Device Information
 
-<img src="https://github.com/user-attachments/assets/34ff8e63-27e7-4d2d-9fd6-12563e586fd4" alt="ODU" width="300"/>
-
-<img src="https://github.com/user-attachments/assets/13a94e63-55cf-4d45-96f9-1d3ed5609395" alt="IDU" width="300"/>
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1751110135/Tozed_P11/oduidu.jpg" alt="ODUuart" width="600"/>
 
 ## Why Openwrt ?
 The ODU can be used as the seperate device with POE adapter and can be connected to any indoor router you have with a WAN port. Once Openwrt installed, you can replace the out of the box 4g module with any supporting mPCIe module. The mPCIe slot inside the ODU use USB lines to connect the 4g module in to the main board. So your choice of 4g module must be usb supporting one. For my testing, i have used Tozed LT72-A 4g module extracted from Tozed S12 pro cat 6 router.
