@@ -26,3 +26,13 @@ Use mtd write to flash the firmware image\
 When the writing has completed, reboot the router
 
 <img src="https://res.cloudinary.com/dckmedia/image/upload/v1751116756/flashing_xs5ucz.jpg" alt="cha341a" width="600"/>
+
+Upon reboot, you may see in uart Bad Magic Number. This means you have to update your u-boot bootargs. Use the following commands and reboot the router. 
+
+        setenv bootargs 'console=ttyS0,115200 root=/dev/mtdblock1 rootfstype=squashfs,jffs2 rw init=/sbin/init mtdparts=ath-nor0:64k(u-boot),6528k(rootfs),448k(rootfs_data),1024k(uImage),64k(mib0),64k(ART)'
+
+        saveenv
+
+To boot it without restarting
+
+        bootm 0x9f010000
