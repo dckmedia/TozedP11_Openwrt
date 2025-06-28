@@ -10,4 +10,4 @@ To do that, you will need following equipments
 
 Install the correct drivers for your CHA341A. Turn the ODU powe off and unplug thernaet cable. Connect SOP8 200mil connector to the MX25L6436F chip properly. Make sure you have a good solid connection. Then plug the programmer in to your linux or windows computer. 
 
-<img src="https://github.com/user-attachments/assets/01a16874-02e7-43a0-b43a-20e76711f15a" alt="ODUuart" width="200"/>
+<img src="https://github.com/dckmedia/TozedP11_Openwrt/blob/main/pin_configuration.JPG" alt="ODUuart" width="200"
