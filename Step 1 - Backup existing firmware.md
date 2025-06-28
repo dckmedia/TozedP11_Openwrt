@@ -14,3 +14,5 @@ Install the correct drivers for your CHA341A. Turn the ODU powe off and unplug t
 <img src="https://github.com/dckmedia/TozedP11_Openwrt/blob/main/pin_configuration.JPG" alt="CHA341a pin config" width="600">
 
 Use [flashrom](https://github.com/flashrom/flashrom) if you are using Linux or use [AsProgrammer dregmod](https://github.com/therealdreg/asprogrammer-dregmod)r for windows to backup the existing full flash of your device.
+
+Keep the spi backup in secure location so you can write it back using the CHA341a Programmer if needed.
