@@ -24,3 +24,5 @@ Use mtd write to flash the firmware image\
         mtd write openwrt-ath79-generic-tozed_p11-squashfs-bootm.bin firmware
 
 When the writing has completed, reboot the router
+
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1751116756/flashing_xs5ucz.jpg" alt="cha341a" width="600"/>
