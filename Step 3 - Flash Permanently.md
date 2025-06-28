@@ -1,4 +1,4 @@
-## Flash Permanently
+### Flash Permanently
 
 Load initramfs as per Step 2 instructions
 
