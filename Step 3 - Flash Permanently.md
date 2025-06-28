@@ -1,3 +1,5 @@
+## Flash Permanently
+
 Load initramfs as per Step 2 instructions
 
 Access terminal using putty and enter the below and check the partition layout
