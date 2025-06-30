@@ -10,6 +10,9 @@ The ODU can be used as the seperate device with POE adapter and can be connected
 
 Special thanks to - [Lakshan Technology](https://www.facebook.com/share/1AXsUXrdP9/?mibextid=wwXIfr) for providing me a device at low cost for testing and debugging.
 
+## Special Notice
+
+Do not flash the device permanently unless you take a full SPI backup.
 ### ODU UART Access
 ##### 1. Open the ODU (Outdoor Unit):
 Carefully disassemble the unit to access the main PCB. Take precautions to avoid damaging the casing or components.
