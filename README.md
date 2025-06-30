@@ -12,7 +12,8 @@ Special thanks to - [Lakshan Technology](https://www.facebook.com/share/1AXsUXrd
 
 ## Special Notice
 
-Do not flash the device permanently unless you take a full SPI backup. Please follow the guide Step 2 - Backup existing firmware.
+Do not flash the device permanently unless you take a full SPI backup. Please follow the guide Step 2 - Backup existing firmware. If your device U-boot doesn't support saveenv you need to find a way to patch it. Otherwise it will not boot using openwrt.
+
 ### ODU UART Access
 ##### 1. Open the ODU (Outdoor Unit):
 Carefully disassemble the unit to access the main PCB. Take precautions to avoid damaging the casing or components.
