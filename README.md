@@ -12,7 +12,7 @@ Special thanks to - [Lakshan Technology](https://www.facebook.com/share/1AXsUXrd
 
 ## Special Notice
 
-Do not flash the device permanently unless you take a full SPI backup.
+Do not flash the device permanently unless you take a full SPI backup. Please follow the guide Step 2 - Backup existing firmware.
 ### ODU UART Access
 ##### 1. Open the ODU (Outdoor Unit):
 Carefully disassemble the unit to access the main PCB. Take precautions to avoid damaging the casing or components.
