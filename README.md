@@ -40,3 +40,6 @@ Open software like PuTTY, screen, minicom, or Tera Term.
 4. Click open
 <img src="https://res.cloudinary.com/dckmedia/image/upload/v1757139065/Tozed_P11/putty.png" alt="putty" width="400"/>
 Power on the ODU and monitor the boot log. You should see U-Boot or kernel messages if everything is connected properly.
+
+#### Next topic
+[Backup exisiting firmware](https://github.com/dckmedia/TozedP11_Openwrt/blob/main/Step%201%20-%20Backup%20existing%20firmware.md)
