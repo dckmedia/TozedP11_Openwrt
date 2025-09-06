@@ -31,9 +31,12 @@ Identify the UART pin header on the PCB
 
 ##### 4. Use a Serial Terminal:
 
-    Open software like PuTTY, screen, minicom, or Tera Term.
-    Set baud rate to 115200
-    Configure with 8N1 (8 data bits, No parity, 1 stop bit)
-    No flow control
+Open software like PuTTY, screen, minicom, or Tera Term.
 
+#### Putty
+1. Select Serial
+2. Set the COM port of the serial adapter
+3. Set baud rate to 115200
+4. Click open
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1757139065/Tozed_P11/putty.png" alt="putty" width="400"/>
 Power on the ODU and monitor the boot log. You should see U-Boot or kernel messages if everything is connected properly.
