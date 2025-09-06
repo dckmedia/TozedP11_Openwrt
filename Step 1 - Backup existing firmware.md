@@ -1,5 +1,5 @@
 
-**Backup existing firmware**
+## Backup existing firmware
 
 Before you do any permanent flashing, it is recommended to take a full flash backup so you can revert back to original firmware. 
 To do that, you have 2 mothods
