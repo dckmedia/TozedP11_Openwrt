@@ -62,6 +62,3 @@ Using Winscp, upload both files in to into /tmp directory
         mtd write openwrt-ath79-generic-tozed_p11-squashfs-bootm.bin firmware
 
 When the writing has completed, reboot the router
-
-
-Hit Enter and the device will now boot into the OpenWrt initramfs image from RAM.
