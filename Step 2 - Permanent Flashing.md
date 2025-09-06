@@ -56,9 +56,12 @@ Using Winscp, upload both files in to into /tmp directory
 <img src="https://res.cloudinary.com/dckmedia/image/upload/v1757149044/Tozed_P11/winscp.png" alt="uart" width="500"/>
 
 #### 8. Use mtd write to flash the firmware image
+Using putty UART terminal and enter the below to flash permanantly. You only need to write u-boot in to the flash (second command) if your currect u-boot doesn't have saveenv support.
 
         cd /tmp
         mtd write u-boot_p11.bin u-boot
         mtd write openwrt-ath79-generic-tozed_p11-squashfs-bootm.bin firmware
 
 When the writing has completed, reboot the router
+
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1751116756/flashing_xs5ucz.jpg" alt="uart" width="700"/>
