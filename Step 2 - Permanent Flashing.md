@@ -29,4 +29,35 @@ Copy and paste the following in to the uboot prompt
 
     bootm 0x81000000
 
+#### 5. Check mtd partitions
+Using putty UART terminal and enter the below and check the partition layout
+
+        cat /proc/mtd
+
+You will see below partition layout
+
+        dev:    size   erasesize  name
+        mtd0: 00010000 00010000 "u-boot"
+        mtd1: 007d0000 00010000 "firmware"
+        mtd2: 00227761 00010000 "kernel"
+        mtd3: 005a889f 00010000 "rootfs"
+        mtd4: 001f0000 00010000 "rootfs_data"
+        mtd5: 00010000 00010000 "mib0"
+        mtd6: 00010000 00010000 "ART"
+
+#### 6. Download relevent files
+Donwload following 2 files from the release,
+openwrt-ath79-generic-tozed_p11-squashfs-bootm.bin
+u-boot_p11.bin
+
+#### 7. Upload files using winscp
+Using Winscp, upload both files in to into /tmp directory
+
+#### 8. Use mtd write to flash the firmware image
+
+        mtd write openwrt-ath79-generic-tozed_p11-squashfs-bootm.bin firmware
+
+When the writing has completed, reboot the router
+
+
 Hit Enter and the device will now boot into the OpenWrt initramfs image from RAM.
