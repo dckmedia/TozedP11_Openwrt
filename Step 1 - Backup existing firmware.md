@@ -74,3 +74,5 @@ Use [flashrom](https://github.com/flashrom/flashrom) if you are using Linux or u
 
 Keep the spi backup in secure location so you can write it back using the CHA341a Programmer if needed.
 
+#### Next topic
+[Permanent Flashing](https://github.com/dckmedia/TozedP11_Openwrt/blob/main/Step%202%20-%20Permanent%20Flashing.md)
