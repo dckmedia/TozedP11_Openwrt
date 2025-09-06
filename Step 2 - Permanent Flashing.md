@@ -1,5 +1,5 @@
 ## Flashing Permanantly 
-Please make sure you have followed the [backup procedure](https://github.com/dckmedia/TozedP11_Openwrt/blob/main/Step%201%20-%20Backup%20existing%20firmware.md) before begin. 
+Please make sure you have followed the [Backup existing firmware procedure](https://github.com/dckmedia/TozedP11_Openwrt/blob/main/Step%201%20-%20Backup%20existing%20firmware.md) before begin. 
 #### 1. Interrupt the Boot Process
 
     athrs27_phy_setup ATHR_PHY_CONTROL 0 :1000
