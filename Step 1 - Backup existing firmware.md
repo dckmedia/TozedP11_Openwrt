@@ -2,7 +2,14 @@
 **Backup existing firmware**
 
 Before you do any permanent flashing, it is recommended to take a full flash backup so you can revert back to original firmware. 
-To do that, you will need following equipments
+To do that, you have 2 mothods
+
+#### Method 1 - Using UART console + initramfs boot
+
+
+
+#### Method 2 - Using CHA341A mini programmer + flashrom
+You will need following equipments
 
  - CH341A Mini Programmer - (should support 3.3v - if not, [follow this video](https://www.youtube.com/watch?v=C53-aqp4hbI) to modify the programmer)
  - SOIC8 SOP8 Flash Chip IC Test Clips Socket
