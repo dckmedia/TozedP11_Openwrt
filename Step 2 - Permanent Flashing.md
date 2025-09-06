@@ -56,7 +56,7 @@ Using Winscp, upload both files in to into /tmp directory
 <img src="https://res.cloudinary.com/dckmedia/image/upload/v1757149044/Tozed_P11/winscp.png" alt="uart" width="500"/>
 
 #### 8. Use mtd write to flash the firmware image
-Using putty UART terminal and enter the below to flash permanantly. You only need to write u-boot in to the flash (second command) if your currect u-boot doesn't have saveenv support.
+Using putty UART terminal and enter the below to flash permanantly.
 
         cd /tmp
         mtd write u-boot_p11.bin u-boot
