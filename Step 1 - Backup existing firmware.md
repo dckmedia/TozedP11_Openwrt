@@ -6,7 +6,7 @@ To do that, you have 2 mothods
 
 #### Method 1 - Using UART console + initramfs boot
 
-##### 1. Interrupt the Boot Process
+#### 1. Interrupt the Boot Process
 
     athrs27_phy_setup ATHR_PHY_CONTROL 0 :1000
     athrs27_phy_setup ATHR_PHY_SPEC_STAUS 0 :10
@@ -15,7 +15,7 @@ To do that, you have 2 mothods
     eth0, eth1
     Hit any key to stop autoboot:  0
 
-##### 2. Configure TFTP Boot Parameters
+#### 2. Configure TFTP Boot Parameters
 Copy and paste the following in to the uboot prompt to set the device (router) and TFTP server (your PC) IP addresses:
 
     setenv ipaddr 192.168.8.1
@@ -23,22 +23,23 @@ Copy and paste the following in to the uboot prompt to set the device (router) a
 
 Make sure your PC is running a TFTP server and the openwrt-ath79-generic-tozed_p11-initramfs-kernel.bin file is placed in the TFTP root directory.
 
-##### 3. Load OpenWrt via TFTP
+#### 3. Load OpenWrt via TFTP
 Copy and paste the following in to the uboot prompt
 
     tftpboot 0x81000000 openwrt-ath79-generic-tozed_p11-initramfs-kernel.bin
     
 Hit Enter and wait for the transfer to complete.
 
-##### 4. Boot OpenWrt in RAM
+#### 4. Boot OpenWrt in RAM
 Copy and paste the following in to the uboot prompt
 
     bootm 0x81000000
 
 Hit Enter and the device will now boot into the OpenWrt initramfs image from RAM.
 
-##### 5. Check the mtd partitions
+#### 5. Check the mtd partitions
 On the openwrt root shell loaded type and hist enter.
+
     cat /proc/mtd
 
     dev:    size   erasesize  name
@@ -47,7 +48,7 @@ On the openwrt root shell loaded type and hist enter.
     mtd2: 00040000 00010000 "art"
     mtd3: 00740000 00010000 "firmware"
 
-##### 6. Backup 
+#### 6. Backup 
 Backup each partition in to /tmp directory of the router and then tranfer them to your PC using WinScp
 
     mtd read /tmp/mtd0_u-boot.bin /dev/mtd0
