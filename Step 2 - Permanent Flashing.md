@@ -65,3 +65,23 @@ Using putty UART terminal and enter the below to flash permanantly.
 When the writing has completed, reboot the router
 
 <img src="https://res.cloudinary.com/dckmedia/image/upload/v1751116756/flashing_xs5ucz.jpg" alt="uart" width="700"/>
+
+## Troubleshooting
+## Issue 
+You may get below error while trying to flash u-boot partition:
+
+    root@openwrt:/ mtd write u-boot_p11.bin
+    Could not open mtd device: u-boot
+    can't open device writing!
+
+### Solution
+Reboot the router and inturupt at u-boot prompt. Move u-boot_p11.bin file in to TFTPD64 folder.Issue the following commands and reboot.
+
+    tftp 0x80060000 UbootP11.bin
+    erase 0x9f000000 +0x10000
+    cp.b 0x80060000 0x9f000000 0x10000
+    reset
+If reset doesn't work, unplug the power and plug back in.
+
+In case you cant see anything on the UART after reboot, this means u-boot didnt flash properly. So, take your backups from [Step 1](https://github.com/dckmedia/TozedP11_Openwrt/blob/main/Step%201%20-%20Backup%20existing%20firmware.md) and do spi flashing to go back to the stock u-boot. 
+
