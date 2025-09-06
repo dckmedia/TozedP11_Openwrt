@@ -36,6 +36,23 @@ Copy and paste the following in to the uboot prompt
 
 Hit Enter and the device will now boot into the OpenWrt initramfs image from RAM.
 
+##### 5. Check the mtd partitions
+On the openwrt root shell loaded type and hist enter.
+    cat /proc/mtd
+
+    dev:    size   erasesize  name
+    mtd0: 00040000 00010000 "u-boot"
+    mtd1: 00040000 00010000 "u-boot-env"
+    mtd2: 00040000 00010000 "art"
+    mtd3: 00740000 00010000 "firmware"
+
+##### 6. Backup 
+Backup each partition in to /tmp directory of the router and then tranfer them to your PC using WinScp
+
+    mtd read /tmp/mtd0_u-boot.bin /dev/mtd0
+    mtd read /tmp/mtd1_u-boot-env.bin /dev/mtd1
+    mtd read /tmp/mtd2_art.bin /dev/mtd2
+    mtd read /tmp/mtd3_firmware.bin /dev/mtd3
 
 
 #### Method 2 - Using CHA341A mini programmer + flashrom
