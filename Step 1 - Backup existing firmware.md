@@ -72,6 +72,21 @@ Install the correct drivers for your CHA341A. Turn the ODU powe off and unplug t
 
 Use [flashrom](https://github.com/flashrom/flashrom) if you are using Linux or use [AsProgrammer dregmod](https://github.com/therealdreg/asprogrammer-dregmod)r for windows to backup the existing full flash of your device.[Install flashrom on Ubuntu](https://installati.one/install-flashrom-ubuntu-22-04)
 
+## Using AsProgrammer
+
+1. Download the software from github repo [here](https://github.com/therealdreg/asprogrammer-dregmod/releases/tag/v3.17)
+
+2. Extract it and run AsProgrammer.exe
+
+3. Set the correct settings:
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1757338861/Tozed_P11/ASP_4.gif" alt="cha341a" width="800"/>
+
+4. Click Read IC button to read the IC
+
+5. Once reading completed, click on Save file button to save the backup.
+
+<img src="https://res.cloudinary.com/dckmedia/image/upload/v1757339510/Tozed_P11/readok.png" alt="cha341a" width="800"/>
+
 Keep the spi backup in secure location so you can write it back using the CHA341a Programmer if needed.
 
 #### Next topic
