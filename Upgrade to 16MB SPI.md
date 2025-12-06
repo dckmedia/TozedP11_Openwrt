@@ -24,6 +24,10 @@ Both chips share:
 
 Because of this compatibility, the router’s bootloader and kernel SPI drivers can interface with the new chip without modification—as long as the DTS flash size is updated.
 
+<img width="239" height="271" alt="old" src="https://github.com/user-attachments/assets/11c1514a-9660-4d1e-9192-9894c47de83b" />
+
+<img width="239" height="271" alt="new" src="https://github.com/user-attachments/assets/0b2b6d1c-a0dd-4e66-96fb-e8df24be9149" />
+
 ## How to upgrade
 
  1. **Download the full 16 MB SPI flash image** - Download the file tozed_p11_16mb_spi_flash.bin from the repository
@@ -35,3 +39,4 @@ Because of this compatibility, the router’s bootloader and kernel SPI drivers 
  4. **Solder the new 16 MB SPI chip in its place.**
     
  5. **Boot the router** - Power on the router — it should now boot from the restored 16 MB SPI chip with all partitions intact.
+<img width="1360" height="1386" alt="16mb" src="https://github.com/user-attachments/assets/1b64ef9d-4940-4c79-9d59-e1c1ff1646b9" />
