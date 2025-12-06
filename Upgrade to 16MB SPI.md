@@ -22,3 +22,6 @@ Both chips share:
  - Same W25Q/MX25 command set
 
 Because of this compatibility, the router’s bootloader and kernel SPI drivers can interface with the new chip without modification—as long as the DTS flash size is updated.
+
+## How to upgrade
+If you have already followed step 1 & 2 and installed openwrt for the device, then use the provided 16mb .bin file to upgrade via luci. You 
