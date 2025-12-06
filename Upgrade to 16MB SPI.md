@@ -26,17 +26,12 @@ Because of this compatibility, the router’s bootloader and kernel SPI drivers 
 
 ## How to upgrade
 
- 1. **Download the full 16 MB SPI flash image**
+ 1. **Download the full 16 MB SPI flash image** - Download the file tozed_p11_16mb_spi_flash.bin from the repository
     
-    Download the file tozed_p11_16mb_spi_flash.bin from the repository
+ 2. **Flash the new SPI chip** - Use a hardware SPI programmer (e.g., CH341A) to write the full 16 MB image to the new MX25L12833F SPI chip.
     
-  2. **Flash the new SPI chip**
-     Use a hardware SPI programmer (e.g., CH341A) to write the full 16 MB image to the new MX25L12833F SPI chip.
+ 3. **Replace the old chip on the P11 PCB** - Carefully remove the original 8 MB SPI chip from the PCB.
     
-  3. **Replace the old chip on the P11 PCB**
-      Carefully remove the original 8 MB SPI chip from the PCB.
+ 4. **Solder the new 16 MB SPI chip in its place.**
     
-  4. **Solder the new 16 MB SPI chip in its place.**
-    
-  5. **Boot the router**
-     Power on the router — it should now boot from the restored 16 MB SPI chip with all partitions intact.
+ 5. **Boot the router** - Power on the router — it should now boot from the restored 16 MB SPI chip with all partitions intact.
